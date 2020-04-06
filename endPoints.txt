@@ -1,0 +1,135 @@
+-------------------------------------EndPoint Inicial
+- http://localhost:7000/api/inicial/AddItensInicias (Obs: Sem parâmetro) - POST
+
+
+-------------------------------------EndPoints Sabor
+
+- http://localhost:7000/api/sabor/AddSabor - POST
+		Exemplo de Parâmetro:
+			{
+				"Id": 0,
+				"Descricao": "Kiwi",
+				"TempoMinutos": 5
+			}
+- http://localhost:7000/api/sabor/GetAllSabores (Obs: Sem parâmetro) - GET
+- http://localhost:7000/api/sabor/DeleteSabor (Obs: Passar o Id como parâmetro) - DELETE
+- http://localhost:7000/api/sabor/GetByIdSabor (Obs: Passar o Id como parâmetro) - GET
+- http://localhost:7000/api/sabor/UpdateSabor - PUT
+		Exemplo de Parâmetro:
+			{
+				"Id": 1,
+				"Descricao": "Kiwi",
+				"TempoMinutos": 5
+			}
+
+
+---------------------------------------EndPoints Tamanho
+
+- http://localhost:7000/api/tamanho/AddTamanho - POST
+		Exemplo de Parâmetro:
+			{
+				"Id": 0,
+				"Descricao": "Pequeno",
+				"Ml": "300",
+				"TempoMinutos": 5,
+				"Valor": 10.00		
+			}
+- http://localhost:7000/api/tamanho/GetAllTamanhos (Obs: Sem parâmetro) - GET
+- http://localhost:7000/api/tamanho/DeleteTamanho (Obs: Passar o Id como parâmetro) - DELETE
+- http://localhost:7000/api/tamanho/GetByIdTamanho (Obs: Passar o Id como parâmetro) - GET
+- http://localhost:7000/api/tamanho/UpdateTamanho - PUT
+		Exemplo de Parâmetro:
+			{
+				"Id": 1,
+				"Descricao": "Pequeno",
+				"Ml": "300",
+				"TempoMinutos": 5,
+				"Valor": 10.00		
+			}
+	
+	
+-----------------------------------------EndPoints Adicional
+
+- http://localhost:7000/api/adicional/AddAdicional - POST
+		Exemplo de Parâmetro:
+			{
+				"Id": 0,
+				"Descricao": "teste",
+				"TempoMinutos": 5,
+				"Valor": 10.00		
+			}
+- http://localhost:7000/api/adicional/GetAllAdicionais(Obs: Sem parâmetro) - GET
+- http://localhost:7000/api/adicional/DeleteAdicional (Obs: Passar o Id como parâmetro) - DELETE
+- http://localhost:7000/api/adicional/GetByIdAdicional (Obs: Passar o Id como parâmetro) - GET
+- http://localhost:7000/api/adicional/UpdateAdicional - PUT
+		Exemplo de Parâmetro:
+			{
+				"Id": 1,
+				"Descricao": "teste",
+				"TempoMinutos": 5,
+				"Valor": 10.00		
+			}	
+	
+---------------------------------------EndPoints Pedido
+- http://localhost:7000/api/pedido/AddPedido - POST
+		Exemplo de Parâmetro:
+			{
+				"Id": 0,
+				"Cliente": "Fernando Castro",
+				"Tamanho": {
+					"Id": 1,
+					"Descricao": "Pequeno",
+					"Ml": "300",
+					"TempoMinutos": 5,
+					"Valor": 10.00	
+				},
+				"Sabor" :{
+					"Id": 3,
+					"Descricao": "Kiwi",
+					"TempoMinutos": 5
+				},
+				"Adicionais":[
+					{
+						"Id": 1,
+						"Descricao": "Leite Ninho",
+						"TempoMinutos": 0,
+						"Valor": 3.00		
+					},
+					{
+						"Id":3,
+						"Descricao": "Paçoca",
+						"TempoMinutos": 3,
+						"Valor": 3.00		
+					}
+				]
+			}
+- http://localhost:7000/api/pedido/GetAllPedidos (Obs: Sem parâmetro) - GET
+- http://localhost:7000/api/pedido/CancelPedido (Obs: Passar o Id como parâmetro) - DELETE
+- http://localhost:7000/api/pedido/GetByIdPedido (Obs: Passar o Id como parâmetro) - GET
+- http://localhost:7000/api/pedido/AlterPedido - PUT
+		Exemplo de Parâmetro:
+			{
+				"Id": 1002,
+				"Cliente": "Fernando Castrooo",
+				"Tamanho": {
+					"Id": 3,
+					"Descricao": "Grande",
+					"Ml": "700",
+					"TempoMinutos": 10,
+					"Valor": 15.00	
+				},
+				"Sabor" :{
+					"Id": 3,
+					"Descricao": "Kiwi",
+					"TempoMinutos": 5
+				},
+				"Adicionais":[
+					{
+						"Id": 1,
+						"Descricao": "Leite Ninho",
+						"TempoMinutos": 0,
+						"Valor": 3.00		
+					}
+				]
+			}
+ 
