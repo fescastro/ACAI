@@ -1,5 +1,6 @@
 Projeto executado com o dotnet core 2.2 + Docker
 
+Acessar no powerShell o diretório onde se encontra o arquivo docker-compose.yml
 
 Passos para Rodar a Aplicação
 
